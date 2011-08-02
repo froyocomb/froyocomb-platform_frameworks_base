@@ -3756,6 +3756,7 @@ class MediaArtistNativeHelper {
             final Canvas canvas = new Canvas(bitmap);
             canvas.drawBitmap(tempBitmap, new Rect(0, 0, newWidth, newHeight),
                                           new Rect(0, 0, width, height), sResizePaint);
+            canvas.setBitmap(null);
         }
 
         if (tempBitmap != null) {
@@ -3832,6 +3833,7 @@ class MediaArtistNativeHelper {
                 final Canvas canvas = new Canvas(bitmaps[i]);
                 canvas.drawBitmap(tempBitmap, new Rect(0, 0, newWidth, newHeight),
                                               new Rect(0, 0, width, height), sResizePaint);
+                canvas.setBitmap(null);
             }
         }
 

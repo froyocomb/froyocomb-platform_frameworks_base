@@ -2474,6 +2474,7 @@ public final class ActivityThread {
                     mAvailThumbnailBitmap = thumbnail;
                     thumbnail = null;
                 }
+                cv.setBitmap(null);
             }
 
         } catch (Exception e) {

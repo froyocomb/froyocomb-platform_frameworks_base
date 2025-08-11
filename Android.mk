@@ -638,7 +638,7 @@ LOCAL_NO_EMMA_COMPILE := true
 
 # HACK(dobby): nist-sip, unfortunately, defines things in the core namespace
 # We will face  consequences
-LOCAL_JARJAR_RULES := --core-library
+LOCAL_DX_FLAGS := --core-library
 
 include $(BUILD_JAVA_LIBRARY)
 

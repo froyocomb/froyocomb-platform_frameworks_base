@@ -636,6 +636,10 @@ LOCAL_MODULE := ext
 LOCAL_NO_EMMA_INSTRUMENT := true
 LOCAL_NO_EMMA_COMPILE := true
 
+# HACK(dobby): nist-sip, unfortunately, defines things in the core namespace
+# We will face  consequences
+LOCAL_JARJAR_RULES := --core-library
+
 include $(BUILD_JAVA_LIBRARY)
 
 
